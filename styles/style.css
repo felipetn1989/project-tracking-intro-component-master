@@ -43,7 +43,7 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 /*
   7. Remove built-in form typography styles
@@ -102,6 +102,7 @@ h6 {
 body {
   font-family: var(--ff-body);
   font-size: 1.125rem;
+  color: var(--Very-Dark-Blue);
 }
 
 h1,
@@ -113,13 +114,84 @@ nav,
   text-transform: uppercase;
 }
 
+header,
+.info {
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  width: 1.5rem;
+}
+
+#hamburger_menu {
+  width: 1.625rem;
+  height: 1rem;
+  z-index: 1;
+}
+
+nav {
+  display: none;
+}
+
+.background {
+  height: 55%;
+  width: 50%;
+  background-color: var(--Light-Grayish-Blue);
+  border-radius: 0 0 0 5rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+}
+
+.info {
+  display: grid;
+  gap: 1.25rem;
+  font-size: 1.125rem;
+  margin-top: 20rem;
+}
+
+.info img {
+  position: absolute;
+  top: 7rem;
+  left: 1rem;
+  width: 30.75rem;
+}
+
+.info h2 {
+  color: var(--Grayish-Blue);
+  font-weight: var(--fw-regular);
+  font-size: 0.9375rem;
+  letter-spacing: 0.3125rem;
+}
+
+.feature {
+  background-color: var(--Very-Dark-Blue);
+  color: var(--Light-Grayish-Blue);
+  font-weight: var(--fw-bold);
+  letter-spacing: normal;
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+}
+
+.info h1 {
+  font-size: 2.3125rem;
+  line-height: 2.25rem;
+}
+
 .demo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    color: var(--Grayish-Blue);
-    font-size: .9325rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  color: var(--Grayish-Blue);
+  font-size: 0.9325rem;
 }
 
 .schedule {
@@ -128,11 +200,11 @@ nav,
   font-weight: var(--fw-bold);
   border: none;
   padding: 0.5rem 1.25rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .preview {
-    word-spacing: .25rem;
+  word-spacing: 0.25rem;
 }
 
 .attribution {
