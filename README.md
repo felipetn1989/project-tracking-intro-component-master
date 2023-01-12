@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/Screenshot%202023-01-12%20at%2011-40-14%20Frontend%20Mentor%20Project%20tracking%20intro%20component.png)
+![](./images/Screenshot%202023-01-12%20at%2012-06-27%20Frontend%20Mentor%20Project%20tracking%20intro%20component.png)
 
 ### Links
 
