@@ -168,6 +168,10 @@ nav > a:hover {
   text-decoration: underline;
 }
 
+.decoration {
+  display: none;
+}
+
 .login {
   color: var(--Grayish-Blue);
   border-top: 1px solid var(--Light-Grayish-Blue);
@@ -282,23 +286,87 @@ nav > a:hover {
 
 /* Media Query for Desktops */
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 80em) {
+  header {
+    padding: 4rem 10rem;
+    flex-direction: row;
+    gap: 0rem;
+  }
+
+  header .logo {
+    width: 2rem;
+  }
+
+  #hamburger_menu {
+    display: none;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 3rem;
+    box-shadow: unset;    
+    background-color: unset;
+    width: unset;
+    font-size: 1rem;
+  }
+
+  .decoration {
+    display: inline;
+    width: .375rem;
+    height: .375rem;
+    border-radius: 50%;
+    background-color: var(--Grayish-Blue);
+    transform: translateY(25%);
+  }
+
+  .login {
+    border-top: unset;
+    padding-top: unset;
+    margin: unset;
+  }
+
+
+  .info {
+    display: grid;
+    grid-template-areas: "two one";
+    grid-template-columns: 1fr 1fr;
+    gap: 0rem;
+    margin-top: 0;
+    padding: 6rem 10rem;
+  }
+
   .info img {
     position: unset;
     transform: unset;
     grid-area: one;
     margin: auto;
+    min-width: 100%;
+    /* transform: translateX(20rem); */
   }
 
   .text {
     grid-area: two;
+    place-content: center start;
+    text-align: left;
+    gap: 2rem;
+    width: 100%;
   }
 
-  .info {
-    display: grid;
-    grid-template-areas: "two one";
-    grid-auto-columns: 1fr;
-    margin-top: 0;
-    
+  .text h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .schedule {
+    font-size: 1.125rem;
+    padding: .675rem 2.5rem;
+  }
+
+  .demo {
+    font-size: 1.125rem;
+    margin-top: 3rem;
+    justify-content: flex-start;
+    gap: 1.5rem;
   }
 }
