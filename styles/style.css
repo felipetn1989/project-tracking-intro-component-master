@@ -131,7 +131,6 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-
 }
 
 header .logo {
@@ -149,14 +148,14 @@ header .logo {
 }
 
 nav {
- display: none;
- z-index: 1;
- background-color: white;
- width: 100%;
- box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.452);
- place-items: center;
- gap: 1rem;
- padding: 1.5rem;
+  display: none;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.452);
+  place-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
 }
 
 nav > a {
@@ -190,8 +189,6 @@ nav > a:hover {
 }
 
 .info {
-  display: grid;
-  gap: 1.25rem;
   font-size: 1.1875rem;
   margin-top: 20.5625rem;
 }
@@ -201,6 +198,11 @@ nav > a:hover {
   top: 7rem;
   left: 1rem;
   width: 31.375rem;
+}
+
+.text {
+  display: grid;
+  gap: 1.25rem;
 }
 
 .info h2 {
@@ -217,7 +219,7 @@ nav > a:hover {
   letter-spacing: normal;
   padding: 0.25rem 0.75rem;
   border-radius: 1rem;
-  margin-right: .75rem;
+  margin-right: 0.75rem;
 }
 
 .info h1 {
@@ -238,7 +240,7 @@ nav > a:hover {
   background-color: var(--Red);
   color: var(--Light-Grayish-Blue);
   font-weight: var(--fw-bold);
-  font-size: .875rem;
+  font-size: 0.875rem;
   border: none;
   padding: 0.625rem 1.75rem;
   border-radius: 0.5rem;
@@ -260,4 +262,43 @@ nav > a:hover {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media Query for Tablets */
+@media screen and (min-width: 37.5em) {
+  .info {
+    text-align: center;
+  }
+
+  .info img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .demo {
+    justify-content: center;
+  }
+}
+
+/* Media Query for Desktops */
+
+@media screen and (min-width: 60em) {
+  .info img {
+    position: unset;
+    transform: unset;
+    grid-area: one;
+    margin: auto;
+  }
+
+  .text {
+    grid-area: two;
+  }
+
+  .info {
+    display: grid;
+    grid-template-areas: "two one";
+    grid-auto-columns: 1fr;
+    margin-top: 0;
+    
+  }
 }
