@@ -140,7 +140,7 @@ nav {
 }
 
 .background {
-  height: 55%;
+  height: 51.5%;
   width: 50%;
   background-color: var(--Light-Grayish-Blue);
   border-radius: 0 0 0 5rem;
@@ -153,15 +153,15 @@ nav {
 .info {
   display: grid;
   gap: 1.25rem;
-  font-size: 1.125rem;
-  margin-top: 20rem;
+  font-size: 1.1875rem;
+  margin-top: 20.5rem;
 }
 
 .info img {
   position: absolute;
   top: 7rem;
   left: 1rem;
-  width: 30.75rem;
+  width: 31.375rem;
 }
 
 .info h2 {
@@ -176,12 +176,13 @@ nav {
   color: var(--Light-Grayish-Blue);
   font-weight: var(--fw-bold);
   letter-spacing: normal;
-  padding: 0 0.5rem;
+  padding: 0.25rem 0.75rem;
   border-radius: 1rem;
+  margin-right: .75rem;
 }
 
 .info h1 {
-  font-size: 2.3125rem;
+  font-size: 2.4375rem;
   line-height: 2.25rem;
 }
 
@@ -198,8 +199,9 @@ nav {
   background-color: var(--Red);
   color: var(--Light-Grayish-Blue);
   font-weight: var(--fw-bold);
+  font-size: .875rem;
   border: none;
-  padding: 0.5rem 1.25rem;
+  padding: 0.625rem 1.75rem;
   border-radius: 0.5rem;
 }
 
