@@ -308,7 +308,7 @@ nav > a:hover {
     box-shadow: unset;    
     background-color: unset;
     width: unset;
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
   .decoration {
@@ -331,9 +331,9 @@ nav > a:hover {
     display: grid;
     grid-template-areas: "two one";
     grid-template-columns: 1fr 1fr;
-    gap: 0rem;
+    gap: 1rem;
     margin-top: 0;
-    padding: 6rem 10rem;
+    padding: 4rem 10rem;
   }
 
   .info img {
@@ -341,8 +341,8 @@ nav > a:hover {
     transform: unset;
     grid-area: one;
     margin: auto;
-    min-width: 100%;
-    /* transform: translateX(20rem); */
+    width: 150%;
+    transform: translateX(6rem);
   }
 
   .text {
